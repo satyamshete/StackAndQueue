@@ -60,7 +60,7 @@ namespace StackAndQueue
             else
             {
                 TOP = TOP.Next;
-                Console.WriteLine("Deleted the first element");
+                Console.WriteLine("Deleted the top element");
             }
             Display();
             Console.WriteLine();

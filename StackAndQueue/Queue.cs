@@ -33,7 +33,7 @@ namespace StackAndQueue
             }
             else
             {
-                Console.WriteLine("Elements present are: ");
+                Console.WriteLine("Elements present in queue are: ");
                 Node temp = Head;
 
                 while (temp != null)
@@ -46,6 +46,19 @@ namespace StackAndQueue
 
             }
             Console.WriteLine();
+        }
+        public void Deque()
+        {
+            if (this.Head == null)
+            {
+                Console.WriteLine("No elements present ");
+            }
+            else
+            {
+                Head = Head.Next;
+                Console.WriteLine("Deleted the first element");
+            }
+
         }
     }
 }

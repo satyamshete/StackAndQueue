@@ -10,6 +10,7 @@ namespace StackAndQueue
             Console.WriteLine("Press 1 to Push element into stack");
             Console.WriteLine("Press 2 for Peek and Pop from stack ");
             Console.WriteLine("Press 3 for Append into Queue ");
+            Console.WriteLine("Press 4 for deque elements from Queue ");
             int input = int.Parse(Console.ReadLine());
 
             Stack stack = new Stack();
@@ -38,6 +39,18 @@ namespace StackAndQueue
                     queue.Append(56);
                     queue.Append(30);
                     queue.Append(70);
+                    queue.Display();
+                    break;
+                case 4:
+                    queue.Append(56);
+                    queue.Append(30);
+                    queue.Append(70);
+                    queue.Display();
+                    queue.Deque();
+                    queue.Display();
+                    queue.Deque();
+                    queue.Display();
+                    queue.Deque();
                     queue.Display();
                     break;
                 default:
